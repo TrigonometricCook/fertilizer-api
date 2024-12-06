@@ -13,6 +13,12 @@ decision_tree_model = pickle.load(open("decision_tree_model.pkl", "rb"))
 logistic_regression_model = pickle.load(open("logistic_regression_model.pkl", "rb"))
 random_forest_model = pickle.load(open("random_forest_model.pkl", "rb"))
 
+
+@app.route('/')
+def home():
+    return jsonify({"message": "Welcome to the Fertilizer API"})
+
+
 @app.route('/predict', methods=['POST'])
 def predict():
     try:
