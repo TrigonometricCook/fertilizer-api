@@ -1,3 +1,8 @@
+flask
+vercel-python
+scikit-learn
+pickle
+
 annotated-types==0.7.0
 argcomplete==3.4.0
 asttokens==2.4.1
