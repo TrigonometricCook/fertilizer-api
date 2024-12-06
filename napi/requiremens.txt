@@ -1,0 +1,4 @@
+flask
+vercel-python
+scikit-learn
+pickle
