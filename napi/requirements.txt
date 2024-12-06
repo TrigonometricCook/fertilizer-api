@@ -2,5 +2,4 @@ Flask==2.3.3
 scikit-learn==1.5.2
 pandas==2.2.2
 numpy==1.24.3
-attrs==23.2.0
 vercel-python==0.0.1
