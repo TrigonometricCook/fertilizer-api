@@ -8,10 +8,10 @@ import pickle
 app = Flask(__name__)
 
 # Load the pre-trained models and scaler
-scaler = pickle.load(open("/home/adi/Development/Projects/Fertilizer API/scaler.pkl", "rb"))
-decision_tree_model = pickle.load(open("/home/adi/Development/Projects/Fertilizer API/decision_tree_model.pkl", "rb"))
-logistic_regression_model = pickle.load(open("/home/adi/Development/Projects/Fertilizer API/logistic_regression_model.pkl", "rb"))
-random_forest_model = pickle.load(open("/home/adi/Development/Projects/Fertilizer API/random_forest_model.pkl", "rb"))
+scaler = pickle.load(open("scaler.pkl", "rb"))
+decision_tree_model = pickle.load(open("decision_tree_model.pkl", "rb"))
+logistic_regression_model = pickle.load(open("logistic_regression_model.pkl", "rb"))
+random_forest_model = pickle.load(open("random_forest_model.pkl", "rb"))
 
 @app.route('/predict', methods=['POST'])
 def predict():
