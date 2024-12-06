@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "==2.3.3"
+scikit-learn = "==1.5.2"
+pandas = "==2.2.2"
+numpy = "==1.24.3"
+vercel-python = "==0.0.1"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
